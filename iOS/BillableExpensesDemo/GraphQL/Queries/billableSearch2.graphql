@@ -1,0 +1,33 @@
+query billableSearch2 {
+  billableSearch2(searchTerm: "hello") {
+    __typename
+    customers{
+      items {
+        __typename
+        id
+        name
+      }
+      errors {
+        __typename
+        code
+        message
+      }
+    }
+    projects {
+      items {
+        __typename
+        projectId
+        projectName
+        customerId
+        customerName
+      }
+      errors {
+        __typename
+        code
+        message
+      }
+    } 
+    
+  
+  }
+}

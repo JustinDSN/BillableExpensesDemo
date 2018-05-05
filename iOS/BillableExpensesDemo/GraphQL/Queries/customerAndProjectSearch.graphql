@@ -1,0 +1,29 @@
+query customerAndProjectSearch {
+  customerSearch(searchTerm: "asdf") {
+    items {
+        __typename
+        id
+        name
+      }
+      errors {
+        __typename
+        code
+        message
+      }
+  }
+  
+  projectSearch(searchTerm:"asdf") {
+      items {
+        __typename
+        projectId
+        projectName
+        customerId
+        customerName
+      }
+      errors {
+        __typename
+        code
+        message
+      }
+    } 
+}
