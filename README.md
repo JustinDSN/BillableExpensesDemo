@@ -25,12 +25,13 @@ pod install
 ```
 
 ## Experiment! 🔬🔭⚗️
-Open BillableExpensesDemo.xcworkspace with Xcode
-Open ViewController.swift to checkout the different options implemented.  The GraphQL (Schema, Queries, Generated API) related bits are found in the `GraphQL\` folder.
-You can use the comment line function to enable/disable the different options and see what the output is.
-Run the application to see the results in the debugger console.
+* Open BillableExpensesDemo.xcworkspace with Xcode
+* Open ViewController.swift to checkout the different options implemented.  
+* The GraphQL (Schema, Queries, Generated API) related bits are found in the `GraphQL\` folder.
+* You can use the comment line function to enable/disable the different options and see what the output is.
+* Run the application to see the results in the debugger console.
 
-## Regenerating the Schema
+# Regenerating the Schema
 If you change the server's schema, you'll need to restart node (Ctrl + C to quit) and also regenerate the schema.json file that Apollo uses to generate the GraphQLAPI.swift file (found in `GraphQL\Generated`).
 
 To regenerate:
