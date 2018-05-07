@@ -1,29 +1,37 @@
-query customerAndProjectSearch {
-  customerSearch(searchTerm: "asdf") {
-    items {
-        __typename
-        id
-        name
-      }
-      errors {
-        __typename
-        code
-        message
-      }
-  }
-  
-  projectSearch(searchTerm:"asdf") {
-      items {
-        __typename
-        projectId
-        projectName
-        customerId
-        customerName
-      }
-      errors {
-        __typename
-        code
-        message
-      }
-    } 
+fragment customerFragment on Customer {
+    id
+    name
+}
+
+fragment projectFragment on Project {
+    projectId
+    projectName
+    customerId
+    customerName
+}
+
+fragment errorFragment on Error {
+    code
+    message
+}
+
+query CustomerAndProjectSearch($searchTerm: String) {
+    customers(searchTerm: $searchTerm) {
+        items {
+            ... customerFragment
+        }
+
+        errors {
+            ... errorFragment
+        }
+    }
+
+    projects(searchTerm: $searchTerm) {
+        items {
+            ... projectFragment
+        }
+        errors {
+            ... errorFragment
+        }
+    }
 }
