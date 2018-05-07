@@ -1,0 +1,11 @@
+query ProfitAndLossQuery($orgId: String, $userId: String, $periods: String) {
+   xeroReport(reportName: ProfitAndLoss, orgId: $orgId, userId: $userId, from: "2017-04-01", to: "2018-03-31", periods: $periods, timeframe: "MONTH") {
+     reportRows  {
+       rowType
+       title
+       cells {
+         value
+       }
+     }
+   }
+}
