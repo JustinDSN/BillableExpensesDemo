@@ -13,46 +13,7 @@
           "description": "",
           "fields": [
             {
-              "name": "hello",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "billableSearch",
-              "description": "",
-              "args": [
-                {
-                  "name": "searchTerm",
-                  "description": "",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  },
-                  "defaultValue": null
-                }
-              ],
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "UNION",
-                  "name": "BillableSearchResult",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "billableSearch2",
+              "name": "customers",
               "description": "",
               "args": [
                 {
@@ -68,41 +29,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "BillableSearchResult2",
+                "name": "CustomerList",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "billableSearch3",
-              "description": "",
-              "args": [
-                {
-                  "name": "searchTerm",
-                  "description": "",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  },
-                  "defaultValue": null
-                }
-              ],
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "OBJECT",
-                  "name": "SearchResults",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "customerSearch",
+              "name": "projects",
               "description": "",
               "args": [
                 {
@@ -118,30 +52,7 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "CustomerSearchResult",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "projectSearch",
-              "description": "",
-              "args": [
-                {
-                  "name": "searchTerm",
-                  "description": "",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  },
-                  "defaultValue": null
-                }
-              ],
-              "type": {
-                "kind": "OBJECT",
-                "name": "ProjectSearchResult",
+                "name": "ProjectList",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -164,29 +75,8 @@
           "possibleTypes": null
         },
         {
-          "kind": "UNION",
-          "name": "BillableSearchResult",
-          "description": "",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": [
-            {
-              "kind": "OBJECT",
-              "name": "CustomerSearchResult",
-              "ofType": null
-            },
-            {
-              "kind": "OBJECT",
-              "name": "ProjectSearchResult",
-              "ofType": null
-            }
-          ]
-        },
-        {
           "kind": "OBJECT",
-          "name": "CustomerSearchResult",
+          "name": "CustomerList",
           "description": "",
           "fields": [
             {
@@ -261,17 +151,12 @@
           "possibleTypes": [
             {
               "kind": "OBJECT",
-              "name": "CustomerSearchResult",
+              "name": "CustomerList",
               "ofType": null
             },
             {
               "kind": "OBJECT",
-              "name": "ProjectSearchResult",
-              "ofType": null
-            },
-            {
-              "kind": "OBJECT",
-              "name": "SearchResults",
+              "name": "ProjectList",
               "ofType": null
             }
           ]
@@ -388,7 +273,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "ProjectSearchResult",
+          "name": "ProjectList",
           "description": "",
           "fields": [
             {
@@ -501,111 +386,6 @@
           "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
-        },
-        {
-          "kind": "OBJECT",
-          "name": "BillableSearchResult2",
-          "description": "",
-          "fields": [
-            {
-              "name": "customers",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "CustomerSearchResult",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "projects",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "ProjectSearchResult",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "OBJECT",
-          "name": "SearchResults",
-          "description": "",
-          "fields": [
-            {
-              "name": "items",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "UNION",
-                  "name": "SearchResult",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "errors",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "INTERFACE",
-                  "name": "Error",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [
-            {
-              "kind": "INTERFACE",
-              "name": "HasErrors",
-              "ofType": null
-            }
-          ],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "UNION",
-          "name": "SearchResult",
-          "description": "",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": [
-            {
-              "kind": "OBJECT",
-              "name": "Project",
-              "ofType": null
-            },
-            {
-              "kind": "OBJECT",
-              "name": "Customer",
-              "ofType": null
-            }
-          ]
         },
         {
           "kind": "OBJECT",

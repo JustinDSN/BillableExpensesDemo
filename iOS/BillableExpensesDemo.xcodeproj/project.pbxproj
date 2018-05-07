@@ -13,10 +13,7 @@
 		D00D212B209E2BF7008A1B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00D2129209E2BF7008A1B90 /* Main.storyboard */; };
 		D00D212D209E2BF8008A1B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00D212C209E2BF8008A1B90 /* Assets.xcassets */; };
 		D00D2130209E2BF8008A1B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00D212E209E2BF8008A1B90 /* LaunchScreen.storyboard */; };
-		D00D213F209E2DDE008A1B90 /* billableSearch2.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D00D2139209E2DDE008A1B90 /* billableSearch2.graphql */; };
 		D00D2140209E2DDE008A1B90 /* customerAndProjectSearch.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D00D213A209E2DDE008A1B90 /* customerAndProjectSearch.graphql */; };
-		D00D2141209E2DDE008A1B90 /* billableSearch3.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D00D213B209E2DDE008A1B90 /* billableSearch3.graphql */; };
-		D00D2142209E2DDE008A1B90 /* billableSearch.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D00D213C209E2DDE008A1B90 /* billableSearch.graphql */; };
 		D00D2143209E2DDE008A1B90 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = D00D213E209E2DDE008A1B90 /* schema.json */; };
 		D00D2147209E2E49008A1B90 /* GraphQLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D2146209E2E48008A1B90 /* GraphQLAPI.swift */; };
 		D00D2149209E2EE3008A1B90 /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D2148209E2EE3008A1B90 /* ApolloClient.swift */; };
@@ -31,10 +28,7 @@
 		D00D212C209E2BF8008A1B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D00D212F209E2BF8008A1B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D00D2131209E2BF8008A1B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D00D2139209E2DDE008A1B90 /* billableSearch2.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = billableSearch2.graphql; sourceTree = "<group>"; };
 		D00D213A209E2DDE008A1B90 /* customerAndProjectSearch.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = customerAndProjectSearch.graphql; sourceTree = "<group>"; };
-		D00D213B209E2DDE008A1B90 /* billableSearch3.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = billableSearch3.graphql; sourceTree = "<group>"; };
-		D00D213C209E2DDE008A1B90 /* billableSearch.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = billableSearch.graphql; sourceTree = "<group>"; };
 		D00D213E209E2DDE008A1B90 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		D00D2146209E2E48008A1B90 /* GraphQLAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLAPI.swift; sourceTree = "<group>"; };
 		D00D2148209E2EE3008A1B90 /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
@@ -117,10 +111,7 @@
 		D00D2138209E2DDE008A1B90 /* Queries */ = {
 			isa = PBXGroup;
 			children = (
-				D00D2139209E2DDE008A1B90 /* billableSearch2.graphql */,
 				D00D213A209E2DDE008A1B90 /* customerAndProjectSearch.graphql */,
-				D00D213B209E2DDE008A1B90 /* billableSearch3.graphql */,
-				D00D213C209E2DDE008A1B90 /* billableSearch.graphql */,
 			);
 			path = Queries;
 			sourceTree = "<group>";
@@ -210,13 +201,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D00D2142209E2DDE008A1B90 /* billableSearch.graphql in Resources */,
 				D00D2130209E2BF8008A1B90 /* LaunchScreen.storyboard in Resources */,
 				D00D212D209E2BF8008A1B90 /* Assets.xcassets in Resources */,
-				D00D2141209E2DDE008A1B90 /* billableSearch3.graphql in Resources */,
 				D00D2143209E2DDE008A1B90 /* schema.json in Resources */,
 				D00D212B209E2BF7008A1B90 /* Main.storyboard in Resources */,
-				D00D213F209E2DDE008A1B90 /* billableSearch2.graphql in Resources */,
 				D00D2140209E2DDE008A1B90 /* customerAndProjectSearch.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
