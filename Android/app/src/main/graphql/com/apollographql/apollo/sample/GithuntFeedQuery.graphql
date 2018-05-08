@@ -1,6 +1,0 @@
-query ContactQuery($orgId: String, $userId: String) {
-	 contacts(orgId: $orgId, userId: $userId) {
-	   name,
-	   lastName
-	 }
-}
