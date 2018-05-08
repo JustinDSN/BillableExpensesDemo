@@ -39,7 +39,7 @@ public class MainActivityAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     private void handleItem(ItemHolder holder, int position) {
-        if(holder.itemString != null) {
+        if (holder.itemString != null) {
             holder.itemString.setText(mData.get(position));
         }
     }
